@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrícula combinadores</title>
+    <style>
+        p{
+            width:400px;
+            margin: 10px auto;
+        }
+        span{
+            font-size:50px;
+            display:inline-block;
+            width:100px;
+            height:50px;
+            border:1px solid #000;
+            text-align:center;
+        }
+        /* span{
+            color:red;
+        }
+        span+span{
+            color:green;
+        }
+        span+span+span{
+            color:blue;
+        }
+        p+p>span{
+            color:yellow
+        }
+        p+p>span+span{
+            color:pink
+        }
+        p+p>span+span+span{
+            color:bisque
+        }
+        p+p+p>span{
+            color:brown
+        }
+         p+p+p>span+span{
+            color:rgb(46, 161, 140)
+        }
+          p+p+p>span+span+span{
+            color:rgb(171, 151, 40)
+        } */
+         span:nth-child(1){
+            color:red;
+         }
+         p:nth-child(2)>span:nth-child(1){
+            color:green;
+         }
+         body>p:nth-child(2)>span:nth-child(3){
+            color:blue;
+         }
+    </style>
+</head>
+<body>
+    <p><span>1</span><span>2</span><span>3</span></p>
+    <p><span>4</span><span>5</span><span>6</span></p>
+    <p><span>7</span><span>8</span><span>3</span></p>
+</body>
+</html>
